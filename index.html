@@ -3,40 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Journalism Portfolio</title>
+    <title>Your Name - Journalism Portfolio</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6;
+            background-color: #0f172a; /* Dark background */
+            color: #f8fafc; /* Light text */
+        }
+        .clip-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .clip-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="antialiased">
 
-    <!-- Header Section -->
-    <header class="bg-white shadow-sm p-6 md:p-8">
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
-            <!-- Your Name and Title -->
-            <div class="text-center md:text-left mb-4 md:mb-0">
-                <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Xinxin (Cynthia)</h1>
-                <p class="text-lg text-gray-600">Reporter</p>
+    <!-- Header & Hero Section -->
+    <header class="relative overflow-hidden pt-12 pb-24 md:pt-24 md:pb-32 bg-slate-900 shadow-xl">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center md:items-start justify-between">
+                <!-- Name and Title -->
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">Xinxin (Cynthia)</h1>
+                    <p class="text-xl text-slate-400 mt-2 tracking-wide">Reporter</p>
+                </div>
+                
+                <!-- Social Links -->
+                <nav>
+                    <ul class="flex space-x-6 text-slate-400">
+                        <li><a href="https://github.com/Jupiter-lxx" class="hover:text-blue-400 transition-colors duration-300 text-sm">GitHub</a></li>
+                        <li><a href="lxxer1204@gmail.com" class="hover:text-blue-400 transition-colors duration-300 text-sm">Email</a></li>
+                    </ul>
+                </nav>
             </div>
-            
-            <!-- Social Links -->
-            <nav>
-                <ul class="flex space-x-4">
-                    <!-- Replace '#' with your actual social media links -->
-                    <li><a href="https://github.com/Jupiter-lxx" class="text-gray-500 hover:text-blue-500 transition-colors duration-300">GitHub</a></li>
-                    <li><a href="mailto:lxxer1204@gmail.com" class="text-gray-500 hover:text-blue-500 transition-colors duration-300">Email</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main class="container mx-auto p-6 md:p-8">
 
         <!-- Bio Section -->
         <section id="about" class="bg-white rounded-xl shadow-lg p-6 md:p-10 mb-8 md:mb-12">
