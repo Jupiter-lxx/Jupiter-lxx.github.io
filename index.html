@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Journalism Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm p-6 md:p-8">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <!-- Xinxin (Cynthia)-->
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Your Name</h1>
+                <p class="text-lg text-gray-600">Reporter</p>
+            </div>
+            
+            <!-- Social Links -->
+            <nav>
+                <ul class="flex space-x-4">
+                    <!-- Replace '#' with your actual social media links -->
+                    <li><a href="https://github.com/Jupiter-lxx" class="text-gray-500 hover:text-blue-500 transition-colors duration-300">GitHub</a></li>
+                    <li><a href="mailto:lxxer1204@gmail.com" class="text-gray-500 hover:text-blue-500 transition-colors duration-300">Email</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6 md:p-8">
+
+        <!-- Bio Section -->
+        <section id="about" class="bg-white rounded-xl shadow-lg p-6 md:p-10 mb-8 md:mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">About Me</h2>
+            <p class="text-base leading-relaxed text-gray-700">
+                <!-- Replace with your bio -->
+                Technology, finance and economic reporter with 5+ years of professional experience at reputable outlets. Proven record of breaking news, cultivating sources across different industries, and delivering fast, in-depth report. Work has garnered 10M+ reads. Based in Silicon Valley now.
+            </p>
+        </section>
+
+        <!-- Clips/Projects Section -->
+        <section id="clips">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Featured Clips</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Start of Clip Card Template -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://imgslim.geekpark.net/image/newgeekpark/copyright.png" alt="Placeholder image for a journalism project" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Headline of Your Story</h3>
+                        <p class="text-sm text-gray-500 mb-4">GeekPark | 2023 to 2025 </p>
+                        <p class="text-base text-gray-700 mb-4">Geek Park Personal Page</p>
+                        <a href="https://www.geekpark.net/users/60efdeac-10b3-4ada-9e5e-01ca3ef29070" target="_blank" class="inline-block bg-blue-500 text-white font-medium py-2 px-4 rounded-full hover:bg-blue-600 transition-colors duration-300">Read the Full Story</a>
+                    </div>
+                </div>
+                <!-- End of Clip Card Template -->
+
+                <!-- Duplicate this card for each of your clips -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://imgslim.geekpark.net/uploads/image/file/3a/04/3a04e4596920757ea48e72dc2b506da7.png" alt="Placeholder image for a journalism project" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">广告，救不了 AI 搜索</h3>
+                        <p class="text-sm text-gray-500 mb-4">GeekPark | 2025-09-01</p>
+                        <p class="text-base text-gray-700 mb-4">广告没跑通，高管先跑了。</p>
+                        <a href="https://www.geekpark.net/news/353381" target="_blank" class="inline-block bg-blue-500 text-white font-medium py-2 px-4 rounded-full hover:bg-blue-600 transition-colors duration-300">View Project</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://imgslim.geekpark.net/uploads/image/file/40/8b/408b1f2ad36bcc2285302d161b1b229f.png" alt="Placeholder image for a journalism project" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Interactive Data Story</h3>
+                        <p class="text-sm text-gray-500 mb-4">GeekPark | 2025-09-01</p>
+                        <p class="text-base text-gray-700 mb-4">Here's a spot for a project that used code. Did you build a web scraper to collect data? Did you use D3.js to create a custom chart? Tell the story of the project itself.</p>
+                        <a href="https://www.geekpark.net/news/353041" target="_blank" class="inline-block bg-blue-500 text-white font-medium py-2 px-4 rounded-full hover:bg-blue-600 transition-colors duration-300">Explore Interactive</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-white shadow-sm p-6 md:p-8 mt-8 md:mt-12">
+        <div class="container mx-auto text-center text-gray-500 text-sm">
+            <p>&copy; 2025 Xinxin. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
