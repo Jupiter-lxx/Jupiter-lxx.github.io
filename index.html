@@ -3,26 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Report Portfolio</title>
+    <title>Your Name - Journalism Portfolio</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0f172a; /* Dark background */
-            color: #f8fafc; /* Light text */
+            background-color: #0d1222; /* Deeper, more elegant dark background */
+            color: #f0f4f8; /* Softer light text */
         }
         .clip-card {
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
         }
         .clip-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        .data-card {
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .data-card:hover {
+            transform: scale(1.02);
+        }
+        .image-overlay {
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+            background-color: rgba(13, 18, 34, 0.7);
+        }
+        .clip-card:hover .image-overlay {
+            opacity: 0;
+        }
+        .overlay-content {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .clip-card:hover .overlay-content {
+            opacity: 1;
         }
     </style>
 </head>
 <body class="antialiased">
+    
 
     <!-- Header & Hero Section -->
     <header class="relative overflow-hidden pt-12 pb-24 md:pt-24 md:pb-32 bg-slate-900 shadow-xl">
